@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     #库名称
     s.name             = 'ZwlCreateLib'   
     #版本号
-    s.version          = '1.0.0'
+    s.version          = '1.0.1'
     #库简短介绍,以后search到简介
     s.summary          = 'iOS 测试库组件'
     #开源库描述,定义具体的描述
