@@ -28,7 +28,7 @@
                                                 options:NSJSONReadingMutableLeaves
                                                   error:&error];
     if (error) {
-        EnnoLog(@"Deserialized JSON string failed with error message '%@'.",
+        NSLog(@"Deserialized JSON string failed with error message '%@'.",
                 [error localizedDescription]);
     }
     
@@ -45,8 +45,10 @@
                                                    options:NSJSONWritingPrettyPrinted
                                                      error:&error];
     if (error) {
-        EnnoLog(@"Serialized JSON string failed with error message '%@'.",
+        NSLog(@"Serialized JSON string failed with error message '%@'.",
                 [error localizedDescription]);
+        
+        
     }
     return data;
 }
@@ -59,7 +61,7 @@
                                                              options:0
                                                                error:&error];
     if (error) {
-        EnnoLog(@"Serialized PropertyList string failed with error message '%@'.",
+        NSLog(@"Serialized PropertyList string failed with error message '%@'.",
                 [error localizedDescription]);
     }
     return data;
